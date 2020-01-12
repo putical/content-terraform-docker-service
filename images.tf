@@ -1,7 +1,7 @@
 resource "docker_image" "ghost_image" {
-  name = "ghost:alpine"
+  name = "${var.ghost_image}"
 }
 
 resource "docker_image" "mysql_image" {
-  name = "mysql:5.7"
+  name = "${var.mysql_image}"
 }
